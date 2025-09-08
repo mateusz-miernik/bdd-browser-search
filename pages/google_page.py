@@ -5,6 +5,7 @@
 from playwright.sync_api import Page
 from pages.base_page import BasePage
 
+
 class GooglePage(BasePage):
     def __init__(self, page: Page, site: str):
         super().__init__(page, site)

@@ -27,15 +27,13 @@ def step_impl(context, query):
 def step_impl(context):
     raise StepNotImplementedError('Then I should be provided with suggestions to broaden the date filter')
 
-from behave.api.pending_step import StepNotImplementedError
-@then(u'I should see results published within the last 24 hours related to "prowly ai"')
+@then('I should see results published within the last 24 hours related to "prowly ai"')
 def step_impl(context):
     raise StepNotImplementedError(u'Then I should see results published within the last 24 hours related to "prowly ai"')
 
 @when('no results are available in that time range')
 def step_impl(context):
     raise StepNotImplementedError(u'When no results are available in that time range')
-
 
 @then('I should see a message indicating "No results found"')
 def step_impl(context):
